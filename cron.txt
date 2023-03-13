@@ -1,0 +1,9 @@
+crontab -each
+
+CRON item - Daily
+
+*/5 * * * * /bin/timeout -s 2 290 python3 dydx-bot/program/main.py > output.txt 2>&1
+
+0 12 * * * /bin/timeout -s 2 86330 python3 dydx-bot/program/main.py > output.txt 2>&1
+
+crontab -l
